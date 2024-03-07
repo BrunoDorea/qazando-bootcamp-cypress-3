@@ -1,6 +1,6 @@
 /// <reference types='cypress'>
-describe("TEST SUITE - RESTFUL API", () => {
-    it("GET - LIST OF SINGLE OBJECT", () => {
+describe("Test Suite - RestFul API", () => {
+    it("GET - List of single object", () => {
         cy.request({
             method: "GET",
             url: "https://api.restful-api.dev/objects/ff8081818dfdd992018e0e8f8c9d0e70",
@@ -10,7 +10,7 @@ describe("TEST SUITE - RESTFUL API", () => {
             expect(response.body.name).to.equal("Zenfone BH1994");
         });
     });
-    it("GET - LIST OF ALL OBJECTS", () => {
+    it("GET - List of all objects", () => {
         cy.request({
             method: "GET",
             url: "https://api.restful-api.dev/objects",
@@ -22,7 +22,7 @@ describe("TEST SUITE - RESTFUL API", () => {
             });
         });
     });
-    it("POST - ADD OBJECT WITH SUCCESS", () => {
+    it("POST - Add object with success", () => {
         cy.request({
             method: "POST",
             url: "https://api.restful-api.dev/objects",

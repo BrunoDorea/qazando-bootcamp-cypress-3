@@ -5,7 +5,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
-    reportPageTitle: 'Testes de API - RestFul API',
+    reportPageTitle: 'Testes de API - qazando',
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
